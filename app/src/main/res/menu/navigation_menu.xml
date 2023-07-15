@@ -2,19 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menuHome"
-        android:title="home" />
+        android:id="@+id/linked"
+        android:title="Home"
+        android:icon="@drawable/ic_linked2">
+    </item>
     <item
-        android:id="@+id/menuCollection"
-        android:title="Services" />
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title=" " />
+    <item
+        android:id="@+id/drive"
+        android:icon="@drawable/ic_drive"
+        android:title=" " />
 
     <item
-        android:title="authentication">
-        <menu>
-            <item
-                android:id="@+id/menuLogin"
-                android:title="login"/>
-        </menu>
-    </item>
+        android:id="@+id/file"
+        android:icon="@drawable/ic_printshop"
+        android:title=" " />
 
 </menu>

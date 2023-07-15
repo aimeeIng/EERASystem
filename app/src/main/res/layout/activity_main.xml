@@ -15,13 +15,13 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="190dp"
+            android:layout_height="260dp"
             android:layout_alignParentTop="true"
             android:layout_marginStart="0dp">
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:background="@color/black">
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -84,9 +84,13 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="-210dp"
+                android:padding="10dp"
+                android:background="#283747"
+                android:alpha="0.9"
+                android:gravity="center"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -119,7 +123,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:background="#F8351F"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
@@ -129,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:text="News"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     android:textAllCaps="true"/>
 
                 <TextView
@@ -137,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:text="read all news"
                     android:textColor="@color/white"
-                    android:textSize="14sp"/>
+                    android:textSize="12sp"/>
 
             </LinearLayout>
             <RelativeLayout
@@ -145,12 +149,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 android:gravity="center"
-                android:background="#2F3A6A">
+                android:background="#1234B0">
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/l1"
-                    android:paddingTop="15dp"
+                    android:paddingTop="10dp"
                     android:paddingBottom="5dp"
                     app:layout_constraintBottom_toBottomOf="parent">
                     <LinearLayout
@@ -216,8 +220,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
                         android:layout_gravity="center"
                         android:orientation="horizontal">
 
@@ -363,9 +367,13 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#283747"
+        android:gravity="left"
         app:menu="@menu/navigation_menu"
-        android:layout_gravity="start"/>
+        app:itemIconTint="@android:color/white"
+        android:layout_gravity="end"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
