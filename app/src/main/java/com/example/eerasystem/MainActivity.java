@@ -35,22 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
                 switch(item.getItemId()){
 
-                    case R.id.linked:
+                    case R.id.login:
                         Toast.makeText(MainActivity.this, "linkedin clicked", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
-                    case R.id.search:
+                    case R.id.signup:
                         Toast.makeText(MainActivity.this, "search clicked", Toast.LENGTH_SHORT).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-                    case R.id.drive:
-                        Toast.makeText(MainActivity.this, "drive clicked", Toast.LENGTH_SHORT).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-
-                    case R.id.file:
-                        Toast.makeText(MainActivity.this, "file clicked", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                 }

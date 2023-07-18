@@ -2,22 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/linked"
-        android:title="Home"
+        android:id="@+id/login"
+        android:title="Login"
         android:icon="@drawable/ic_linked2">
     </item>
     <item
-        android:id="@+id/search"
+        android:id="@+id/signup"
         android:icon="@drawable/ic_search"
-        android:title=" " />
-    <item
-        android:id="@+id/drive"
-        android:icon="@drawable/ic_drive"
-        android:title=" " />
-
-    <item
-        android:id="@+id/file"
-        android:icon="@drawable/ic_printshop"
-        android:title=" " />
+        android:title="Sign Up " />
 
 </menu>

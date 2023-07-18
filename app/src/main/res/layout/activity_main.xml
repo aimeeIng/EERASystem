@@ -29,16 +29,25 @@
                     android:layout_marginStart="20dp"
                     app:layout_constraintBottom_toBottomOf="parent">
 
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_drive"
+                        android:gravity="left"
+                        android:layout_marginStart="20dp"
+                        android:id="@+id/logo"
+                        />
+
                     <TextView
                         android:id="@+id/ur"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:text="E"
                         android:textStyle="bold"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/logo"
                         android:textSize="30sp"/>
                     <TextView
                         android:id="@+id/ee"
@@ -50,7 +59,6 @@
                         android:textAllCaps="true"
                         android:textSize="30sp"
                         android:textColor="#34AF00"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/ur"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -60,6 +68,15 @@
                         android:textSize="30sp"
                         android:textColor="@color/white"
                         app:layout_constraintStart_toEndOf="@+id/ee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Management System"
+                        app:layout_constraintTop_toBottomOf="@+id/ur"
+                        android:layout_marginTop="-5dp"
+                        android:textSize="10sp"
+                        android:textColor="#34AF00"
+                        app:layout_constraintStart_toStartOf="@+id/ur"/>
 
                     <ImageView
                         android:id="@+id/menu"
@@ -82,40 +99,86 @@
                 android:src="@drawable/solarpanel"
                 />
 
-            <LinearLayout
-                android:orientation="vertical"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="-210dp"
-                android:padding="10dp"
-                android:background="#283747"
-                android:alpha="0.9"
-                android:gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Coordinating energy"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="research for a low"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Carbon Europe"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"/>
+                app:layout_constraintBottom_toBottomOf="parent">
 
-            </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="#283747"
+                    android:alpha="0.9"
+                    android:gravity="center"
+                    android:id="@+id/ll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coordinating energy"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="research for a low"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Carbon Europe"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="#283747"
+                    android:alpha="0.9"
+                    android:gravity="center"
+                    android:id="@+id/ll2"
+                    android:layout_marginStart="180dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toEndOf="@+id/ll1"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="-30dp"
+                        android:src="@drawable/ic_linked"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_search"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_drive"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="-10dp"
+                        android:src="@drawable/ic_printshop"
+                        />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
         <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
