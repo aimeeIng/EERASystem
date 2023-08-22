@@ -1,24 +1,29 @@
 package com.example.eerasystem;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
-
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
+    public static TextView tView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tView = findViewById(R.id.news);
+
 
         final DrawerLayout drawerLayout = findViewById(R.id.drawerLayout);
         findViewById(R.id.menu).setOnClickListener(new View.OnClickListener() {
@@ -36,8 +41,9 @@ public class MainActivity extends AppCompatActivity {
                 switch(item.getItemId()){
 
                     case R.id.login:
-                        Toast.makeText(MainActivity.this, "linkedin clicked", Toast.LENGTH_SHORT).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
+                        Intent intent = new Intent(MainActivity.this, EmployeeActivity.class);
+                        startActivity(intent);
+                       // drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.signup:
